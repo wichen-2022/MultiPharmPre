@@ -15,9 +15,13 @@ Dependencies:
 - pandas
 
 # 2. MultiPharmPre Pre-training
+   TAKE ZINC DATASET FOR EXAMPLE, USERS COULD UES ANY OTHER DATASET FOR PRE-TRANING
+   for example:
    python MultiPharmPre_pretrain.py --epochs 1000 --dataset zinc --model RGNN_pretrining --cuda 0 --checkpoint
 
 # 3. MultiPharmPre Fine-tuning
+   TAKE hERG DATASET FOR EXAMPLE, USERS COULD UES ANY OTHER DATASET FOR FINE-TUNING
+   for example:
    python MultiPharmPre_Classification.py --epochs 200  --dataset hERG --model RGNN_Classification --cuda 0  --checkpoint --pretrain RGNN_best_model.ckp
 
 # 4. MultiPharmPre Preditcion

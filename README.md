@@ -1,5 +1,5 @@
 # MultiPharmPre
-# Multimodal Pharmacophore Pre-training for Boosting Generalization Capability in Molecular Property Prediction
+Multimodal Pharmacophore Pre-training for Boosting Generalization Capability in Molecular Property Prediction
 
 # 1. MultiPharmPre Setup
 Dependencies:

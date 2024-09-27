@@ -1,5 +1,5 @@
 # MultiPharmPre
-Multimodal Pharmacophore Pre-training for Boosting Generalization Capability in Molecular Property Prediction
+# Multimodal Pharmacophore Pre-training for Boosting Generalization Capability in Molecular Property Prediction
 
 0. setup
 Dependencies:
@@ -21,4 +21,4 @@ Dependencies:
    python MultiPharmPre_Classification.py --epochs 200  --dataset hERG --model RGNN_Classification --cuda 0  --checkpoint --pretrain RGNN_best_model.ckp
 
 4. preditc molecules
-   # use calculate_acc.py to analysis the prediction results
+   use calculate_acc.py to analysis the prediction results

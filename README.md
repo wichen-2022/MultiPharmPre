@@ -1,7 +1,7 @@
-# MultiPharmPre
-Multimodal Pharmacophore Pre-training for Boosting Generalization Capability in Molecular Property Prediction
+# MultiPharmhERG
+Multimodal Pharmacophore Pre-training for Boosting Generalization Capability in hERG Prediction
 
-# 1. MultiPharmPre Setup
+# 1. MultiPharmhERG Setup
 Dependencies:
 - python 3.7
 - pytorch = 1.7.1
@@ -14,19 +14,19 @@ Dependencies:
 - numpy
 - pandas
 
-# 2. MultiPharmPre Pre-training
+# 2. MultiPharmhERG Pre-training
    TAKE ZINC DATASET FOR EXAMPLE, USERS COULD UES ANY OTHER DATASET FOR PRE-TRANING
    
    For example:
    
-   $ python MultiPharmPre_pretrain.py --epochs 1000 --dataset zinc --model RGNN_pretrining --cuda 0 --checkpoint
+   $ python MultiPharmhERG_pretrain.py --epochs 1000 --dataset zinc --model RGNN_pretrining --cuda 0 --checkpoint
 
-# 3. MultiPharmPre Fine-tuning
+# 3. MultiPharmhERG Fine-tuning
    TAKE hERG DATASET FOR EXAMPLE, USERS COULD UES ANY OTHER DATASET FOR FINE-TUNING
    
    For example:
    
-   $ python MultiPharmPre_Classification.py --epochs 200  --dataset hERG --model RGNN_Classification --cuda 0  --checkpoint --pretrain RGNN_best_model.ckp
+   $ python MultiPharmhERG_Classification.py --epochs 200  --dataset hERG --model RGNN_Classification --cuda 0  --checkpoint --pretrain RGNN_best_model.ckp
 
-# 4. MultiPharmPre Preditcion
+# 4. MultiPharmhERG Preditcion
    use calculate_acc.py to analysis the prediction results
